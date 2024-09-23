@@ -1,0 +1,271 @@
+.navbar{
+    display: flex;
+    background-color: #ff6b00;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    color: white;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+}
+
+.navbar-left{
+    margin-left: 30px;
+}
+
+.navbar-left,
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo{
+    font-size: large;
+    font-weight: 900;
+}
+
+.menu-icon-left a{
+    color: #FFFFFF;
+}
+
+.navbar ul li{
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.menu li a{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.menu-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.menu-icon ul svg{
+    margin-top: 8px;
+}
+
+.login{
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+    background-color: #ff6b00;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.container{
+    padding-top: 50px;
+}
+
+.event{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ff6b00;
+    padding: 50px 0;
+}
+
+.event-left,
+.event-center,
+.event-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event button{
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy h1{
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.copy-inner h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 500px;
+    height: 60px;
+    background-color: #FFFFFF;
+}
+
+.copy-inner h3:nth-child(3){
+    margin-bottom: 0;
+    margin-bottom: 100px;
+}
+
+.carousel-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.carousel-container div:nth-child(1){
+    background-color: #FFCACD;
+}
+.carousel-container div:nth-child(2){
+    background-color: #FFC576;
+}
+.carousel-container div:nth-child(3){
+    background-color: #A2F0B3;
+}
+.carousel-container div:nth-child(4){
+    background-color: #EEEEEE;
+}
+.carousel-container div:nth-child(5){
+    background-color: #9cd1ff;
+}
+.carousel-container div:nth-child(6){
+    background-color: #ECBAFF;
+}
+
+.carousel {
+    max-width: 354px;
+    min-height: 208px;
+    min-width: 354px;
+    max-height: 324px;
+    transition: transform 0.5s ease, height 0.5s ease, opacity 0.5s ease; /* 부드러운 전환 효과 */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    align-items: center;
+}
+
+
+
+.carousel h6{
+    margin: 20px 0 0 0;
+    width: 60px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    border: 2px solid #FFFFFF;
+}
+
+.carousel.active {
+    width: 354px;
+    height: 324px;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.carousel.active h6{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.carousel.active p {
+    display: block;
+}
+
+.carousel p {
+    display: none;
+    font-size: 0.8em;
+    white-space: nowrap;
+    margin: 0;
+}
+
+@media(min-width:768px){
+    .menu-icon-left a{
+        display: none;
+    }
+
+}
+
+@media(max-width:767px){
+    .menu li a{
+        display: none;
+    }
+
+    .event_img1,
+    .event_img3,
+    .event_img7{
+        display: none;
+    }
+
+    .copy h1{
+        font-size: large;
+    }
+
+    .copy-inner h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        width: 332px;
+        height: 38px;
+        background-color: #FFFFFF;
+        font-size: 14px;
+    }
+
+    .carousel{
+        min-width: 204px;
+        min-height: 132px;
+        font-size: 1rem;
+    }
+
+    .carousel.active{
+        font-size: 1rem;
+        max-width: 204px;
+        max-height: 132px;
+    }
+
+    .carousel.active p{
+        display: none;
+    }
+}
